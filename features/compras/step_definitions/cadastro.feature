@@ -1,5 +1,5 @@
 #language:pt
-
+@cadastro
 Funcionalidade: Cadastro
 
 Cenario: fazer novo cadastro de usuario

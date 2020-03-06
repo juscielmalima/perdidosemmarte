@@ -1,4 +1,6 @@
-Funcionalidade: Contatar uma empresa 
+#language:pt
+
+Funcionalidade: Contato 
 
 Cenario: Entrar em contato com a empresa
     Dado que eu esteja logado no site
