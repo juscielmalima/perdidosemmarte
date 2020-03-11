@@ -6,22 +6,17 @@ Dado("que eu esteja logado") do
 end
 
 Quando("eu selecionar o produto e adicionar ao carrinho") do
-  # find(:css,'sf-with-ul').click
   find(:xpath,'//*[@id="block_top_menu"]/ul/li[1]/a').click #clica em woman
   find(:xpath,'//*[@id="center_column"]/ul/li[3]/div').click #clica no produto printed dress
-  # find(:xpath,'//*[@id="add_to_cart"]/button/span').click
   find(:xpath,'//*[@id="center_column"]/ul/li[3]/div/div[2]/div[2]/a[1]').click #clica em add no carrinho
-  # find('.button-container')
 end
 
 Quando("clicar em finalizaar a compra em Proceed to checkout") do
   find(:xpath,'//*[@id="layer_cart"]/div[1]/div[2]/div[4]/a').click #clica em proceed to checkout
-  # find('.button btn btn-default standard-checkout button-medium').click
 end
 
 Quando("clicar novamente em Proceed to checkout da primeira etapa de confirmação para compra {int}. Summary") do |int|
   find(:xpath,'//*[@id="center_column"]/p[2]/a[1]/span').click #clica Proceed to checkout
-  # click_button('.button btn btn-default standard-checkout button-medium')
 end
 
 Quando("clicar em add a new address na terceira etapa de confirmação para compra {int}. address") do |int|
