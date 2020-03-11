@@ -3,6 +3,7 @@ require 'cucumber'
 require 'selenium-webdriver'
 require 'capybara'
 require 'capybara/cucumber'
+require 'site_prism'
 # require 'page-object'
 # require 'data_magic'
 
@@ -13,6 +14,6 @@ Capybara.register_driver :selenium do |app|
 end
 
 Capybara.default_driver = :selenium
-Capybara.default_max_wait_time = 90
+Capybara.default_max_wait_time = 60
 Capybara.page.driver.browser.manage.window.maximize
 Capybara.visit 'http://automationpractice.com/'

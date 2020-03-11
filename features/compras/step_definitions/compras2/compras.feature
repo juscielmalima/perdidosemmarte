@@ -1,9 +1,9 @@
 #language:pt
 
 Funcionalidade:Compra  
-
+@alteraEndereco
 Cenario: Alterar endereço da entrega ao efetuar uma compra
-    Dado que eu tenha um cadastro válido
+    Dado que eu esteja logado
     Quando eu selecionar o produto e adicionar ao carrinho
     E clicar em finalizaar a compra em Proceed to checkout
     E clicar novamente em Proceed to checkout da primeira etapa de confirmação para compra 1. Summary
@@ -13,6 +13,7 @@ Cenario: Alterar endereço da entrega ao efetuar uma compra
     E clicar em Proceed to checkout e aceitar os termos e serviços
     Então a compra será efetuada e o endereço estará alterado
 
+@alteraQuantidade
 Cenario: Alterar a quantidade de produtos adicionados ao carrinho ao efetuar a compra
     Dado que eu tenho um cadastro válido
     Quando eu selecionar o 1º produto e escolher o total de 11 quantidades e adicionar ao carrinho

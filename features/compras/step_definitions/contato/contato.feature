@@ -1,5 +1,6 @@
 #language:pt
 
+@contato
 Funcionalidade: Contato 
 
 Cenario: Entrar em contato com a empresa
